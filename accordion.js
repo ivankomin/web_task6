@@ -12,7 +12,7 @@ async function checkUpdates() {
         }
         document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
     } catch (error) {
-        console.error("Помилка:", error);
+        console.error("Error:", error);
     }
 }
 

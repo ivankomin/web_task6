@@ -1,13 +1,10 @@
 <?php
-// save_data.php
 header('Content-Type: application/json');
 
-// Отримуємо дані
 $json = file_get_contents('php://input');
 $data = json_decode($json);
 
 if ($data !== null) {
-    // Записуємо у файл
     if (file_put_contents('data.json', $json)) {
         echo json_encode(['status' => 'success']);
     } else {

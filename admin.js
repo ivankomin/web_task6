@@ -5,7 +5,7 @@ function addItem() {
     const contentInput = document.getElementById('acc-content');
     
     if(!titleInput.value || !contentInput.value) {
-        alert("Заповніть обидва поля!");
+        alert("Fill all fields!");
         return;
     }
 
@@ -31,7 +31,7 @@ function renderPreview() {
 
 async function saveToServer() {
     const status = document.getElementById('status-msg');
-    status.textContent = "Збереження...";
+    status.textContent = "Saving...";
     status.style.color = "blue";
     
     try {
@@ -43,15 +43,15 @@ async function saveToServer() {
         const result = await response.json();
         
         if(result.status === 'success') {
-            status.textContent = "Дані збережено!";
+            status.textContent = "Data saved!";
             status.style.color = "green";
         } else {
-            status.textContent = "Помилка сервера";
+            status.textContent = "Server error";
             status.style.color = "red";
         }
     } catch (e) {
         console.error(e);
-        status.textContent = "Помилка запиту";
+        status.textContent = "Query error";
         status.style.color = "red";
     }
 }
