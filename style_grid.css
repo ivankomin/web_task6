@@ -80,13 +80,13 @@ nav ul li a {
 }
 .b1 { grid-area: header; }
 .b2 { grid-area: two; background: #eee; }
-.b3 { grid-area: three; background: #ccc; }
 .b4 { grid-area: four; background: #bbb; }
 .b5 { grid-area: five; background: #aaa; }
 .b6 { grid-area: six; background: #999; }
 .b7 { grid-area: footer;}
 
 .b3 {
+    grid-area: three; background: #ccc;
     text-align: left;
     display: flex;
     flex-direction: column;
