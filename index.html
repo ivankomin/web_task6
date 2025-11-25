@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+  <link rel="stylesheet" href="style_grid.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="box b1">
+        <div class = "box b1 inner"><h1>variant 9</h1></div>
+        <h1>web task 6</h1>
+        </div>
+    <div class="box b2">
+      <nav>
+      <ul>
+          <li><a href="index.html">Page 1</a></li>
+          <li><a href="page2.html">Page 2</a></li>
+      </ul>
+    </nav>
+  </div>
+    <div class="box b3">
+            <h3>Add stuff here</h3>
+            <div class="admin-form">
+                <label>Title:</label>
+                <input type="text" id="acc-title" placeholder="Enter title">
+                
+                <label>Content:</label>
+                <textarea id="acc-content" rows="3" placeholder="Enter content" style="resize: none;"></textarea>
+                
+                <button onclick="addItem()">Add element</button>
+                
+                <hr style="width:100%; margin: 15px 0;">
+                
+                <h4>Preview:</h4>
+                <ul id="preview-list" style="padding-left: 20px;"></ul>
+                
+                <button class="save-btn" onclick="saveToServer()">Save to server</button>
+                <p id="status-msg" style="font-weight:bold; margin-top:10px;"></p>
+            </div>
+        </div>
+    <div class="box b4">
+      <h3>Welcome!</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Sample text here</p>
+    </div>
+    <div class="box b5">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, esse aliquam possimus, repudiandae vel maiores officia architecto asperiores sequi delectus voluptate consequatur. Quia iusto quibusdam non, illo, reiciendis suscipit doloremque corrupti repellat, temporibus quo ad voluptas minus voluptatum commodi odit rerum neque? Sunt veniam beatae ullam aperiam unde doloremque quos?</p>
+    </div>
+    <div class="box b6"><p class = "redtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid quae molestiae est ipsam fuga.</p>
+    </div>
+    <div class="box b7">
+      <h1>page 1</h1>
+      <div class = "box b7 inner"><h1>idk what to put here</h1></div>
+    </div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
